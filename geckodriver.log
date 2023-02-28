@@ -1,0 +1,52 @@
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+1674405328880	geckodriver	INFO	Listening on 127.0.0.1:47151
+1674405329442	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "40943" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilef4t8Wn"
+Gtk-Message: 13:35:29.463: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1674405330247	Marionette	INFO	Marionette enabled
+1674405330250	Marionette	INFO	Listening on port 44673
+Read port: 44673
+WebDriver BiDi listening on ws://127.0.0.1:40943
+1674405330393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef4t8Wn/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40943/devtools/browser/9b354449-f806-4f82-9204-e31f0403f471
+1674406982565	Marionette	INFO	Stopped listening on port 44673
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
+1674419055716	geckodriver	INFO	Listening on 127.0.0.1:55533
+1674419056042	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "40125" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileP8CR6q"
+Gtk-Message: 17:24:16.060: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1674419056822	Marionette	INFO	Marionette enabled
+1674419056825	Marionette	INFO	Listening on port 33611
+Read port: 33611
+WebDriver BiDi listening on ws://127.0.0.1:40125
+1674419056992	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileP8CR6q/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:40125/devtools/browser/a48fdeeb-24ee-4a8f-ac22-c79eb4bdd747
+1674419255633	geckodriver	INFO	Listening on 127.0.0.1:41157
+1674419256029	mozrunner::runner	INFO	Running command: "/snap/firefox/current/firefox.launcher" "--marionette" "--remote-debugging-port" "42891" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileUEe0NJ"
+Gtk-Message: 17:27:36.064: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1674419256449	Marionette	INFO	Marionette enabled
+1674419256452	Marionette	INFO	Listening on port 42127
+Read port: 42127
+WebDriver BiDi listening on ws://127.0.0.1:42891
+1674419256573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUEe0NJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:42891/devtools/browser/1175b6fb-c44c-4ccd-a0b0-b55cf73050f2
+1674421513503	Marionette	INFO	Stopped listening on port 42127
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1674421514192	Marionette	INFO	Stopped listening on port 33611
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
