@@ -1,13 +1,34 @@
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service as ChromeService
+# from webdriver_manager.chrome import ChromeDriverManager # by ricaportela
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import *
+from selenium.common.exceptions import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException # by ricaportela
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver import ActionChains
+from time import sleep
 from parsel import Selector
 from time import sleep
 import pandas as pd
 import json
+
+
+def driver_open_browser():
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
+    options.add_argument('--incognito') 
+    #options.add_argument('user-agent=User-Agent:Chrome/98.0.4758.102') #Chrome/98.0.4758.102
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)"+"AppleWebKit/537.36 (KHTML, like Gecko)"+"Chrome/87.0.4280.141 Safari/537.36")
+    # driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=options) # by ricaportela
+    driver = webdriver.Chrome(options=options)
+
+    wait = WebDriverWait(driver, 10, poll_frequency=1, ignored_exceptions=[NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException])
+    driver.set_window_size(1920,1080)
+    driver.set_window_position(0,0)
+    sleep(2)
+    return driver
 
 
 def page_down(driver):
@@ -46,7 +67,7 @@ def get_results():
     return results
 
 
-driver = webdriver.Chrome()
+driver = driver_open_browser()
 url = "https://www.google.com/maps/search/barbearia+em+Joinville+-+SC/@-26.291605,-48.8471082,13z"
 
 driver.get(url)
@@ -63,4 +84,4 @@ df.to_json("dados.json", orient="records")
 # with open('dados.json', 'w') as f:
 #     json.dump(obj_json, f)
 
-print(results)
+#print(results)

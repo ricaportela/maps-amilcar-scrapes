@@ -1,4 +1,7 @@
 ipynb
+.venv
+.vscode
+output/
 
 .scrapy/
 __pycache__/

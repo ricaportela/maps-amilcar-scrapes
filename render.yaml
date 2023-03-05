@@ -1,0 +1,29 @@
+# Especificação do ambiente
+env:
+  # Linguagem e versão do Python
+  python: 3.8
+
+# Configurações da máquina virtual
+machine:
+  # Escolha do sistema operacional
+  image: "ubuntu-2004:202107-01"
+  # Quantidade de CPU e RAM
+  plan: "starter"
+  # Definição de variáveis de ambiente
+  env:
+    # Configurações do ChromeDriver
+    CHROMEDRIVER_VERSION: "94.0.4606.61"
+    CHROMEDRIVER_LATEST: "/usr/local/bin/chromedriver"
+
+# Comandos de build e deploy
+build:
+  # Instalação de dependências necessárias
+  steps:
+    - name: "Install Python dependencies"
+      command: "pip install -r requirements.txt"
+    # Download do ChromeDriver
+    - name: "Download ChromeDriver"
+      command: "wget https://chromedriver.storage.googleapis.com/{{ env.CHROMEDRIVER_VERSION }}/chromedriver_linux64.zip && unzip chromedriver_linux64.zip && sudo mv chromedriver {{ env.CHROMEDRIVER_LATEST }} && sudo chmod +x {{ env.CHROMEDRIVER_LATEST }}"
+deploy:
+  # Comando para iniciar o script de raspagem
+  command: "python scraper.py"
